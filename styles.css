@@ -1,3 +1,8 @@
+:root {
+    --theme-color: #596D48;
+    --light-text-color: whitesmoke;
+  }
+
 body {
     display: flex;
     height: 100vh;
@@ -39,7 +44,7 @@ body {
     font-size: 60px;
     font-family: 'Rubik';
     padding-top: 60px;
-    color: whitesmoke;
+    color: var(--light-text-color);
     opacity: 0.9;
 }
 
@@ -47,7 +52,7 @@ svg {
     /* border-width: 3px;
     border-style: solid; */
 
-    color: whitesmoke;
+    color: var(--light-text-color);
     padding: 0px 0px 0px 0px;
     margin: 0px;
     transform: translate(0px, 40px);
@@ -64,6 +69,17 @@ svg {
     background-color: #e5e7eb;
 }
 
+.bottom {
+    padding: 3vw 3vw 1vw 3vw;
+}
+
+.bottom p {
+    font-family: 'Rubik';
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 1vw;
+}
+
 .top p {
     font-family: 'Rubik';
     font-size: 1.5rem;
@@ -75,9 +91,9 @@ svg {
 
 .submit-button {
     padding: 1vw 3vw 1vw 3vw;
-    background-color: #596D48;
+    background-color: var(--theme-color);
     font-family: 'Rubik';
-    color: whitesmoke;
+    color: var(--light-text-color);
     font-size: 1rem;
     font-weight: bold;
     border-style: none;
@@ -86,4 +102,13 @@ svg {
 
 .submit-button:hover {
     text-shadow: gray 2px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--theme-color);
+}
+
+a:hover {
+    text-decoration: underline;
 }
