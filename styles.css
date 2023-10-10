@@ -11,10 +11,9 @@ body {
 }
 
 .left-side {
-    /* border-width: 3px;
-    border-style: solid; */
-
     background-image: url("assets/leaf.jpg");
+    background-color: #e5e7eb;
+    background-repeat: no-repeat;
     background-size: 100%;
     flex: 1;
     padding-top: 635px;
@@ -27,9 +26,6 @@ body {
 }
 
 .logo-container {
-    /* border-width: 3px;
-    border-style: solid; */
-
     display: flex;
     height: 180px;
     justify-content: center;
@@ -40,9 +36,6 @@ body {
 }
 
 .logo-text {
-    /* border-width: 3px;
-    border-style: solid; */
-
     font-size: 60px;
     padding-top: 60px;
     color: var(--light-text-color);
@@ -50,9 +43,6 @@ body {
 }
 
 svg {
-    /* border-width: 3px;
-    border-style: solid; */
-
     color: var(--light-text-color);
     padding: 0px 0px 0px 0px;
     margin: 0px;
