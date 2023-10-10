@@ -1,11 +1,13 @@
 :root {
     --theme-color: #596D48;
     --light-text-color: whitesmoke;
+    --main-font: 'Rubik';
   }
 
 body {
     display: flex;
     height: 100vh;
+    font-family: var(--main-font);
 }
 
 .left-side {
@@ -42,7 +44,6 @@ body {
     border-style: solid; */
 
     font-size: 60px;
-    font-family: 'Rubik';
     padding-top: 60px;
     color: var(--light-text-color);
     opacity: 0.9;
@@ -74,14 +75,12 @@ svg {
 }
 
 .bottom p {
-    font-family: 'Rubik';
     font-size: 1rem;
     font-weight: bold;
     padding-top: 1vw;
 }
 
 .top p {
-    font-family: 'Rubik';
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 3vw;
@@ -92,7 +91,6 @@ svg {
 .submit-button {
     padding: 1vw 3vw 1vw 3vw;
     background-color: var(--theme-color);
-    font-family: 'Rubik';
     color: var(--light-text-color);
     font-size: 1rem;
     font-weight: bold;
@@ -102,7 +100,7 @@ svg {
 }
 
 .submit-button:hover {
-    text-shadow: gray 2px 5px;
+    text-decoration: underline;
 }
 
 a {
@@ -114,21 +112,30 @@ a:hover {
     text-decoration: underline;
 }
 
-.middle .test {
-    display: inline-block;
-    width: 40%;
-}
-
-input {
-    width: 95%;
-}
-
-
-
 .middle {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+}
+
+.middle .form-cell {
+    display: inline-block;
+    width: 40%;
+    margin: 0.5vh;
+    margin-left: 50px;
+}
+
+input {
+    appearance: none;
+    width: 95%;
+    background-color: var(--light-text-color);
+    border: 1px solid var(--theme-color);
+    border-radius: 3px;
+}
+
+
+.legend {
+    font-size: 2rem;
+    margin-left: 48px;
 }
