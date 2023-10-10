@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,55 @@
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Rubik">
     <title>Form practice</title>
 </head>
+
 <body>
     <div class="left-side">
         <div class="logo-container">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px" viewBox="0 0 100 100">
-                <path stroke-width="3" stroke-linecap="round" fill="none" stroke="currentColor" d="M80 50L80 40 95 50 80 60 80 50 10 50 5 40 20 40 35 50 20 60 5 60 10 50"/></svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100px" height="100px" viewBox="0 0 100 100">
+                <path stroke-width="3" stroke-linecap="round" fill="none" stroke="currentColor"
+                    d="M80 50L80 40 95 50 80 60 80 50 10 50 5 40 20 40 35 50 20 60 5 60 10 50" />
+            </svg>
             <span class="logo-text">ARROW</span>
         </div>
     </div>
     <div class="right-side">
+        <div class="top">
+            This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. <br>
+            Sign up now to get started. <br>
+            <br>
+            You know you want to.
+        </div>
+        <div class="mid">
+            <form id="form" action="" method="get">
+                <legend>Let's do this!</legend>
+                <label for="first-name">FIRST NAME
+                    <input type="text" id="first-name" name="first-name">
+                </label>
+                <label for="last-name">LAST NAME
+                    <input type="text" id="last-name" name="last-name">
+                </label>
+                <label for="email">EMAIL
+                    <input type="email" id="email" name="email">
+                </label>
+                <label for="phone-number">PHONE NUMBER
+                    <input type="number" id="phone-number" name="phone-number">
+                </label>
+                <label for="password">PASSWORD
+                    <input type="password" id="password" name="password">
+                </label>
+                <label for="c-password">CONFIRM PASSWORD
+                    <input type="password" id="c-password" name="c-password">
+                </label>
+            </form>
 
+        </div>
+        <div class="submit" for="form">
+            <input type="submit" form="form">Create Account</input>
+            <div>Alrady have an account? Log in</div>
+        </div>
     </div>
 </body>
+
 </html>
