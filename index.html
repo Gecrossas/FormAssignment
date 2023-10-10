@@ -66,5 +66,16 @@
         </div>
     </div>
 </body>
+<script>
+    const passwords = document.querySelectorAll("input[type='password']");
+    const form = document.querySelector("#form");
+    form.addEventListener("submit", (e) => {
+        if(passwords[0].value != passwords[1].value) {
+            alert("Passwords do not match!");
+            e.preventDefault();
+        }
+    })
+
+</script>
 
 </html>
