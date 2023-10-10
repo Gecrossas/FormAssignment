@@ -98,6 +98,7 @@ svg {
     font-weight: bold;
     border-style: none;
     border-radius: 10px; 
+    width: auto;
 }
 
 .submit-button:hover {
@@ -111,4 +112,23 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.middle .test {
+    display: inline-block;
+    width: 40%;
+}
+
+input {
+    width: 95%;
+}
+
+
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
