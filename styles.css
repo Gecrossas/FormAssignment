@@ -71,6 +71,19 @@ svg {
     padding-left: 3vw;
     padding-right: 3vw;
     padding-top: 5vw;
+}
 
+.submit-button {
+    padding: 1vw 3vw 1vw 3vw;
+    background-color: #596D48;
+    font-family: 'Rubik';
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 10px; 
+}
 
+.submit-button:hover {
+    text-shadow: gray 2px 5px;
 }
